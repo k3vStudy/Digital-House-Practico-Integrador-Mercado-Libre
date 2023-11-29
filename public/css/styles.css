@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+}
+
+/* Paleta de colores */
+:root {
+  --amarillo: #EAC926;
+  --azul: #03264C;
+  --celeste: #1259c3;
+  --gris-oscuro: #666;
+  --gris-claro: #ebebeb;
+  --verde: #39b54a;
+}
+
+/* Tipografías */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Tamaños Tipográficos */
+body {
+  font-size: 12px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.price {
+  font-size: 18px;
+}
+
+.discount {
+  font-size: 16px;
+}
+
+.description {
+  font-size: 16px;
+}
+
+.burger-menu {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  padding: 8px;
+  background-color: var(--celeste);
+  color: var(--gris-claro);
+  border-radius: 8px;
+}
+
+
+
+header {
+  background-color: var(--amarillo);
+  padding: 1rem;
+}
+
+.ml-logo {
+  max-height: 15vh;
+}
