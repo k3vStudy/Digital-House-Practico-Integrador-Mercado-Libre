@@ -58,3 +58,34 @@ header {
 .ml-logo {
   max-height: 15vh;
 }
+
+footer {
+  padding: 1em;
+}
+
+footer > section {
+  text-align: center;
+  margin: 1rem;
+}
+
+footer > section > i {
+  color: var(--celeste);
+  font-size: 24px;
+}
+
+footer > section > h3 {
+  font-size: 20px;
+  color: var(--gris-oscuro);
+  margin: 0;
+}
+
+footer > section > p {
+  font-size: 14px;
+  color: var(--gris-oscuro);
+  margin: 0;
+}
+
+
+.copyright-text {
+  color: var(--gris-oscuro);
+}
