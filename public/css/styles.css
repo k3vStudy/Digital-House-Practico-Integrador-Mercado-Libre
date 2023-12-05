@@ -50,11 +50,12 @@ h2 {
 
 header {
   background-color: var(--amarillo);
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
 }
 
 .ml-logo {
   max-height: 15vh;
+  max-width: 50%;
 }
 
 main {
@@ -68,6 +69,7 @@ main {
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
+  align-items: center;
 }
 
 main > section > h1 {
@@ -100,6 +102,14 @@ footer > section > p {
   margin: 0;
 }
 
+.top-header {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  width: 50%;
+}
 
 .copyright-text {
   color: var(--gris-oscuro);
@@ -110,10 +120,13 @@ footer > section > p {
   flex-direction: column;
   text-align: left;
   background-color: white;
+  flex: 0 0 100%;
+  /* por defecto, los artículos ocuparán el 100% del ancho, es decir, solo habrá un artículo por fila */
 }
 
 .product-box > img {
   width: 240px;
+  margin: auto;
 }
 
 .product-delivery-icon {
@@ -155,6 +168,7 @@ footer > section > p {
   color: var(--gris-oscuro);
   font-weight: 400;
   margin: 16px 0 0 0;
+  font-size: 16pxº;
 }
 
 @media screen and (min-width: 361px) {
@@ -167,10 +181,21 @@ footer > section > p {
   }
 
   .product-box {
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-
+    flex: 0 0 50%;
+    transition: all 200ms ease-in-out;
   }
 
+  .product-box:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .product-delivery-icon {
+    transition: all 1s ease;
+  }
+
+  .product-box:hover > .product-desc-box > .product-delivery-icon {
+    transform: rotate(-90deg)
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -184,6 +209,7 @@ footer > section > p {
 
   .product-box {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    flex: 0 0 25%;
   }
 }
 
@@ -219,4 +245,24 @@ footer > section > p {
 
 .product-desc-box {
   position: relative;
+}
+
+.navbar > ul {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.navbar > ul > li {
+  padding: 16px 16px;
+}
+
+.navbar > ul > li > a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbars {
+  display: flex;
+  justify-content: space-between;
 }

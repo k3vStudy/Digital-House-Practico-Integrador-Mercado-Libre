@@ -1,58 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-			rel="stylesheet"
-		/>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
 		<link href="css/styles.css" rel="stylesheet" />
 		<title>Mercado Liebre</title>
 	</head>
 
 	<body>
 		<header>
-			<img class="ml-logo" src="images/logo-mercado-liebre.svg" alt="" />
-			<input
-				type="search"
-				name=""
-				id="search-bar"
-				placeholder="Buscar productos, marcas"
-			/>
-			<button><i class="fas fa-search"></i></button>
-			<p>
-				<i class="fas fa-solid fa-dollar-sign"></i> Comprá en cuotas y sin
-				tarjeta de crédito
-			</p>
-			<nav class="navbar-site">
-				<ul>
-					<li><a href="#">Ofertas</a></li>
-					<li><a href="#">Tiendas Oficiales</a></li>
-					<li><a href="#">Vender</a></li>
-					<li><a href="#">Ayuda</a></li>
-					<div class="spacer"></div>
-				</ul>
-			</nav>
-			<nav class="navbar-login">
-				<ul>
-					<li>
-						<i class="fa-regular fa-circle-user"></i
-						><a href="#">Creá tu cuenta</a>
-					</li>
-					<li>
-						<i class="fa-solid fa-right-to-bracket"></i><a href="#">Ingresá</a>
-					</li>
-					<li>
-						<i class="fa-solid fa-basket-shopping"></i
-						><a href="#">Mis compras</a>
-					</li>
-				</ul>
-			</nav>
+			<div class="top-header">
+
+				<img class="ml-logo" src="images/logo-mercado-liebre.svg" alt="" />
+				<div class="search-bar">
+					<input type="search" name="" id="search-bar" placeholder="Buscar productos, marcas" />
+					<button><i class="fas fa-search"></i></button>
+				</div>
+				<p>
+					<i class="fas fa-solid fa-dollar-sign"></i> Comprá en cuotas y sin
+					tarjeta de crédito
+				</p>
+			</div>
+			<div class="navbars">
+
+				<nav class="navbar navbar-site">
+					<ul>
+						<li><a href="#">Ofertas</a></li>
+						<li><a href="#">Tiendas Oficiales</a></li>
+						<li><a href="#">Vender</a></li>
+						<li><a href="#">Ayuda</a></li>
+						<div class="spacer"></div>
+					</ul>
+				</nav>
+				<nav class="navbar navbar-login">
+					<ul>
+						<li>
+							<a href="#">Creá tu cuenta</a>
+							<i class="fas fa-regular fa-user"></i>
+						</li>
+						<li>
+
+							<a href="#">Ingresá</a>
+							<i class="fas fa-solid fa-right-to-bracket">
+							</i>
+						</li>
+						<li>
+							<a href="#">Mis compras</a>
+							<i class="fas fa-solid fa-cart-shopping"></i>
+						</li>
+					</ul>
+				</nav>
+			</div>
 			<div class="burger-menu">
 				<i class="fas fa-bars"></i>
 			</div>
@@ -63,22 +64,19 @@
 				<h2>Basado en tu última visita</h2>
 				<div class="product-boxes">
 					<div class="product-box">
-						<img
-							src="images/img-cafetera-moulinex.jpg"
-							alt="Cafetera Moulinex"
-						/>
+						<img src="images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex" />
 						<div class="product-desc-box">
 							<div class="product-delivery-icon">
 								<i class="fas fa-solid fa-truck"></i>
 							</div>
 							<div class="product-price-discount">
-							    <p class="product-price">$ 6.770</p>
-							    <p class="product-discount">40% OFF</p>
-							</div>
+								<p class="product-price">$ 6.770</p>
+								<p class="product-discount">40% OFF</p>
 							</div>
 							<p class="product-title">Cafetera Moulinex</p>
 						</div>
 					</div>
+				</div>
 				</div>
 				<!-- Repeat this div for each product -->
 			</section>
@@ -88,16 +86,15 @@
 				<h2>Ofertas</h2>
 				<div class="product-boxes">
 					<div class="product-box">
-						<img
-							src="images/img-cafetera-moulinex.jpg"
-							alt="Cafetera Moulinex"
-						/>
+						<img src="images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex" />
 						<div class="product-desc-box">
 							<div class="product-delivery-icon">
 								<i class="fas fa-solid fa-truck"></i>
 							</div>
-							<p class="product-price">$ 6.770</p>
-							<p class="product-discount">0% OFF</p>
+							<div class="product-price-discount">
+								<p class="product-price">$ 6.770</p>
+								<p class="product-discount">0% OFF</p>
+							</div>
 							<p class="product-title">Cafetera Moulinex</p>
 						</div>
 					</div>
@@ -133,4 +130,5 @@
 			<p class="copyright-text">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
 		</footer>
 	</body>
+
 </html>
