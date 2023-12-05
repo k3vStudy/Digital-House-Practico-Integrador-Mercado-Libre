@@ -72,31 +72,36 @@ main {
   align-items: center;
 }
 
-main > section > h1 {
+main > section > h2 {
   color: var(--gris-oscuro);
+  text-align: left;
+  margin: 1rem;
 }
 
-footer {
+.promotional {
   padding: 1em;
+  display: flex;
+  flex-direction: column;
 }
 
-footer > section {
+.promotional > section {
   text-align: center;
   padding: 2em 1em;
 }
 
-footer > section > i {
+.promotional > section > i {
   color: var(--celeste);
   font-size: 24px;
+  transition: all 1s ease;
 }
 
-footer > section > h3 {
+.promotional > section > h3 {
   font-size: 20px;
   color: var(--gris-oscuro);
   margin: 0;
 }
 
-footer > section > p {
+.promotional > section > p {
   font-size: 14px;
   color: var(--gris-oscuro);
   margin: 0;
@@ -109,10 +114,13 @@ footer > section > p {
 
 .search-bar {
   width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .copyright-text {
   color: var(--gris-oscuro);
+  padding: 1rem;
 }
 
 .product-box {
@@ -176,6 +184,8 @@ footer > section > p {
     display: flex;
   }
 
+
+
   .burger-menu {
     display: none;
   }
@@ -203,17 +213,31 @@ footer > section > p {
     display: flex;
   }
 
+
+
   .burger-menu {
     display: none;
   }
 
   .product-box {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-    flex: 0 0 25%;
+    flex: 0 0 24%;
   }
+
+  .promotional {
+    flex-direction: row;
+  }
+
+  .promotional > section > i:hover {
+    color: var(--verde);
+  }
+
 }
 
 @media screen and (max-width: 360px) {
+  .top-header {
+    flex-wrap: wrap;
+  }
 
   .navbar-login,
   .navbar-site,
@@ -265,4 +289,8 @@ footer > section > p {
 .navbars {
   display: flex;
   justify-content: space-between;
+}
+
+.home-banner {
+  width: 100%;
 }
